@@ -14,6 +14,7 @@ collision_query='''
         WHERE SUBSTR(CAST(Collision_Date AS STRING),1,4)  >= '2016'
 '''
 
+# Parsing the collision date feature
 collisions = pd.read_sql_query(collision_query,con,parse_dates=["collision_date"])
 
 
