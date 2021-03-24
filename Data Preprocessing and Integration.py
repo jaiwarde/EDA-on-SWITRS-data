@@ -38,7 +38,7 @@ victims_query='''
 
 victims = pd.read_sql_query(victims_query,con,parse_dates=["collision_date"])
 
-# Generating the CSVs in the targetted folder to use further fro graphs
+# Generating the CSVs in the targetted folder to use further for data visualization
 collisions.to_csv('C:/Users/jaiwa/Desktop/DCU lectures/CA682 Data Management & Visualization/Assignment/collisions.csv',index = False)
 
 parties.to_csv('C:/Users/jaiwa/Desktop/DCU lectures/CA682 Data Management & Visualization/Assignment/parties.csv',index = False)
