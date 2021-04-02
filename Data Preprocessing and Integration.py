@@ -8,6 +8,7 @@ import sqlite3 # connecting to SQLite database
 con=sqlite3.connect('C:/Users/jaiwa/Desktop/DCU lectures/CA682 Data Management & Visualization/Assignment/switrs.sqlite')
 
 
+
 # Writing a query to import all the data from collision post 2015 and creating 'collisions' pandas dataframe
 collision_query='''
         SELECT * FROM Collisions
